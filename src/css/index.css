@@ -1,0 +1,192 @@
+body {
+    background-image: url('../assets/img/bg.jpeg');
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 800px; 
+    height: 600px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.button {
+    background-image: url('../assets/img/bg_button3.avif');
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 0.79);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.80);
+    display: inline-block;
+    font-size: 30px;
+    font-family: Luminari, fantasy;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);
+}
+*/
+
+.button {
+    font-family: 'Uncial Antiqua', cursive; 
+    font-size: 30px;
+    color: #f5e1a4; 
+    background: linear-gradient(145deg, #1a1d29, #10121b); 
+    border: 3px ridge #c49e3d; 
+    border-radius: 12px; 
+    padding: 10px 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); 
+    text-shadow: 1px 1px 2px #000; /* Sombra en el texto para un efecto de relieve */
+    transition: all 0.3s ease; /* Transición suave para las animaciones */
+    position: relative;
+    overflow: hidden;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px 15px;
+    width: 100%;
+}
+
+.card {
+    width: 250px;              
+    height: 350px;             
+    background: linear-gradient(145deg, #1a1a1d, #0b0b0d); 
+    border-radius: 15px;       
+    border: 5px ridge #d4af37; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);  
+    overflow: hidden;         
+    position: relative;       
+    padding: 20px;
+    text-align: center;
+    color: #d4af37;;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    text-shadow: 3px 3px 5px rgba(179, 161, 5, 0.5);;
+}
+
+.card-image {                 
+    height: auto;                 
+    border-radius: 10px;         
+    object-fit: cover;  
+    width: 100%;  
+    height: 250px;
+    
+}
+
+.card:hover img {
+    display:none;
+}
+
+.card:hover .circle_attack {
+    display:none;
+}
+
+.card:hover h1 {
+    display:none;
+}
+
+.card:hover .types{
+    display:none;
+}
+
+.card .front {
+    display:none;
+}
+.card:hover .front {
+    display: inline-block;
+}
+.card:hover {
+    border: 3px solid #e5c100;
+    box-shadow: 0 15px 30px rgba(255, 255, 0, 0.6);
+    transition: 0.3s ease;    
+}
+
+.card .key {
+    display:none;
+}
+
+.circle_attack{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(163, 4, 4);
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);
+}
+
+.attack{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    top :30px;
+    left: 25px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.80); ;
+}
+
+
+.types {
+    position: absolute;         
+    bottom: 0;                  
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-image: url(../assets/img/bg_button3.avif);
+    background-color: #d4af37;
+    font-family: 'Cinzel', serif;        
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url(../assets/img/bg_button3.avif);
+    text-align: center;        
+    color: white;    
+    height: 30px;  
+    font-size: 20px;  
+    color: black;  
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-back {
+    background: url(../assets/img/bg_button3.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;                 
+    border-radius: 10px;         
+    object-fit: cover;  
+    width: 100%;     
+    overflow: hidden; 
+    border-radius: 5px;
+    color: black;
+    padding: auto;
+}
+
+.back-content {
+    text-align: center; 
+    padding: 0 auto; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    position: sticky;
+    margin-top: 50px;
+}
