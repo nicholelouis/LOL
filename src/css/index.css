@@ -40,13 +40,13 @@ body {
 #cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px 15px;
+    grid-gap: 20px;
     padding: 10px; 
     max-width: 100%; 
 }
 
 .card {
-    width: 100%; 
+    width: 80%; 
     max-width: 250px;               
     height: 350px;          
     background: linear-gradient(145deg, #1a1a1d, #0b0b0d); 
